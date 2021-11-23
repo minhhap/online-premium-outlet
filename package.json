@@ -1,0 +1,32 @@
+{
+  "name": "high-end-fashion-shop",
+  "version": "1.0.0",
+  "description": "A high end fashion shop",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "npm run seed && cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjos7/high-end-fashion-shop.git"
+  },
+  "keywords": [
+    "fashion",
+    "ecommerce",
+    "shop",
+    "luxury",
+    "lifestyle"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "concurrently": "^6.4.0"
+  }
+}
